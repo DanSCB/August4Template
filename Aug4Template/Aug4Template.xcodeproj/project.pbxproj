@@ -14,6 +14,7 @@
 		AC724C18289C337F00938D2D /* Aug4TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC724C17289C337F00938D2D /* Aug4TemplateTests.swift */; };
 		AC724C22289C337F00938D2D /* Aug4TemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC724C21289C337F00938D2D /* Aug4TemplateUITests.swift */; };
 		AC724C24289C337F00938D2D /* Aug4TemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC724C23289C337F00938D2D /* Aug4TemplateUITestsLaunchTests.swift */; };
+		ACE26A67289D527700513479 /* Aug2SDK in Frameworks */ = {isa = PBXBuildFile; productRef = ACE26A66289D527700513479 /* Aug2SDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE26A67289D527700513479 /* Aug2SDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = Aug4Template;
+			packageProductDependencies = (
+				ACE26A66289D527700513479 /* Aug2SDK */,
+			);
 			productName = Aug4Template;
 			productReference = AC724C03289C337D00938D2D /* Aug4Template.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = AC724BFA289C337D00938D2D;
+			packageReferences = (
+				ACE26A65289D527700513479 /* XCRemoteSwiftPackageReference "August2DevEnv4" */,
+			);
 			productRefGroup = AC724C04289C337D00938D2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -331,6 +339,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -345,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,6 +400,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -399,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -583,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACE26A65289D527700513479 /* XCRemoteSwiftPackageReference "August2DevEnv4" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DanSCB/August2DevEnv4";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACE26A66289D527700513479 /* Aug2SDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACE26A65289D527700513479 /* XCRemoteSwiftPackageReference "August2DevEnv4" */;
+			productName = Aug2SDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC724BFB289C337D00938D2D /* Project object */;
 }
