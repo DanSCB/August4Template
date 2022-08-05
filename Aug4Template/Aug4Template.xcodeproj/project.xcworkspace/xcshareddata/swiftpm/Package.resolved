@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "august2devenv4",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DanSCB/August2DevEnv4",
+      "state" : {
+        "revision" : "0d909cea32b3f31c03996569540108704b2cc881",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
